@@ -1,0 +1,16 @@
+.repo-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust the gap between the cards as needed */
+}
+
+.full-repo-card {
+    flex: 1 1 calc(50% - 20px); /* Each card will take up half the container width minus the gap */
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .full-repo-card {
+        flex: 1 1 100%; /* On smaller screens, the cards will stack vertically */
+    }
+}
