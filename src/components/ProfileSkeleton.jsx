@@ -20,9 +20,15 @@ export default function ProfileSkeleton() {
               <div key={i} className="skeleton skeleton-stat"></div>
             ))}
           </div>
-          <div className="skeleton" style={{ height: 120, borderRadius: 16 }}></div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(360px, 1fr))', gap: 16 }}>
-            {[1, 2, 3, 4, 5, 6].map(i => (
+          <div className="skeleton" style={{ height: 120, borderRadius: 16, marginTop: 16 }}></div>
+          <div className="skeleton" style={{ height: 80, borderRadius: 16, marginTop: 16 }}></div>
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 360px), 1fr))',
+            gap: 12,
+            marginTop: 16
+          }}>
+            {[1, 2, 3, 4].map(i => (
               <div key={i} className="skeleton skeleton-card"></div>
             ))}
           </div>
